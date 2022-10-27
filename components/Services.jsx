@@ -30,12 +30,12 @@ export default function Services() {
                             <p>Complete change of hairstyle - £22</p>
                         </li>
                         <li>
-                            <h3>Women's wash and cut</h3>
+                            <h3>Women&apos;s wash and cut</h3>
                             <p>Haircut including wash - From £30</p>
                         </li>
                         <li>
                             <h3>Kids under 13</h3>
-                            <p>Children's haircut - £15</p>
+                            <p>Children&apos;s haircut - £15</p>
                         </li>
                     </ul>
                 </div>

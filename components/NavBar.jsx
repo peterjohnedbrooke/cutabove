@@ -36,10 +36,12 @@ export default function NavBar() {
         <div className={navColor ? `${styles.navWrapperScroll}` : `${styles.navWrapper}`}>
 
             {!click ? <div className={styles.logoContainer}>
-                <div className={styles.logo}></div>
+                <div href="#home" className={styles.logo}>
+                    <a href="#home"></a>
+                </div>
             </div> : <div></div>
             }
-            {!click ? <div className={styles.brand}><h1>Cut Above</h1></div> : null}
+            {!click ? <div className={styles.brand}><h1>Cut Above</h1><a href="#home"></a></div> : null}
             <div className={styles.navContainer}>
                 <div className={!!click ? `${styles.burgerIconCross}` : `${styles.burgerIcon}`} onClick={handleClick}>
                     <Hamburger size={25} className={styles.burgerInner} toggled={isOpen} rounded toggle={setOpen} />

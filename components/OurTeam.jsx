@@ -8,15 +8,15 @@ export default function OurTeam() {
             <h1>OUR TEAM</h1>
             <div className={styles.container}>
                 <div className={styles.imgContainer}>
-                    <Image width={400} height={400} src="/images/personOne.jpg" />
+                    <Image alt='image-one' width={400} height={400} src="/images/personOne.jpg" />
                     <h3>Ben Kemp</h3>
                 </div>
                 <div className={styles.imgContainer}>
-                    <Image width={400} height={400} src="/images/personTwo.jpg" />
+                    <Image alt='image-two' width={400} height={400} src="/images/personTwo.jpg" />
                     <h3>Howard Flowers</h3>
                 </div>
                 <div className={styles.imgContainer}>
-                    <Image width={400} height={400} src="/images/personThree.jpg" />
+                    <Image alt='image-three' width={400} height={400} src="/images/personThree.jpg" />
                     <h3>Harry Mann</h3>
                 </div>
             </div>

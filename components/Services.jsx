@@ -34,7 +34,7 @@ export default function Services() {
                             <p>Haircut including wash - From £30</p>
                         </li>
                         <li>
-                            <h3>Kids (under 13)</h3>
+                            <h3>Kids under 13</h3>
                             <p>Children's haircut - £15</p>
                         </li>
                     </ul>

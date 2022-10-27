@@ -1,0 +1,192 @@
+.navWrapperScroll {
+    background-color: #171717;
+    height: 100px;
+    width: 100vw;
+    margin: auto auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navWrapper, .navWrapperScroll {
+    height: 100px;
+    width: 100vw;
+    margin: auto auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 999;
+    max-width: 100%;
+
+    .brand {
+        h1{
+            font-family: var(--text-brand-font);
+            font-size: 4vh;
+        }
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+
+        h4 {
+            font-size: 3vh;
+            height: fit-content;
+            color: var(--text-color-secondary);
+            letter-spacing: 0.1rem;
+        }
+
+        .logo {
+            background-image: url("/images/logo.png");
+            height: 120px;
+            width: 120px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .navContainer {
+        margin: 2em;
+        z-index: 2;
+    }
+
+    .burgerIcon {
+        z-index: 2;
+        color: var(--text-color-secondary);
+    }
+
+    .burgerIconCross {
+        z-index: 2;
+        color: var(--text-color-secondary);
+    }
+
+    .burgerInner {
+        z-index: 999;
+    }
+
+    .navMenuActive {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        width: fit-content;
+        color: white;
+        height: 100vh;
+        width: 100vw;
+        transition: all 2s ease-in;
+        transition: all 1s ease-out;
+        margin: 0;
+
+        .bg {
+            background-color: black;
+            opacity: 0.9;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+       
+
+        .listActive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            list-style: none;
+            font-size: 5vh;
+            letter-spacing: 0.1em;
+            color: var(--text-color-secondary);
+            padding: 0%;
+
+            
+        }
+
+        .iconsList {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color-secondary);
+            font-size: 30px;
+            max-width: 300px;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            
+            .logo {
+                background-image: url("/images/logo.png");
+                height: 120px;
+                width: 120px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+            }
+            h5 {
+                font-family: var(--text-brand-font);
+                font-size: 3vh;
+                margin: 0;
+                margin-top: -20px;
+                color: var(--text-color-secondary);
+            }
+        }
+    }
+
+    .navMenuHidden {
+        position: fixed;
+        top: 0%;
+        left: -100%;
+        width: 0%;
+        height: 100%;
+        transition: all 1s ease-in-out;
+        margin: 0;
+
+        .bg {
+            top: 0%;
+            left: -100%;
+            width: 0%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+
+        .listHidden {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navWrapper, .navWrapperScroll {
+        .brand {
+            h1 {
+                font-size: 2vh;
+            }
+        }
+    }
+}

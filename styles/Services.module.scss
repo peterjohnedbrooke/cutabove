@@ -1,0 +1,53 @@
+.servicesWrapper {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    max-width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    h1 {
+        color: var(--text-color-secondary);
+    }
+
+    .infoContainer {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        margin: 2em;
+        gap: 1em;
+        max-width: 1200px;
+        
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            
+
+            h2 {
+                text-align: center;
+                color: var(--text-color-secondary);
+
+            }
+
+            li {
+                padding: 0.5em;
+                font-family: var(--text-body-font);
+                max-width: 30vw;
+
+                h3, p {
+                    margin: 0.3em;
+                }
+            }
+        }
+
+        p {
+            font-family: var(--text-body-font);
+        }
+    }
+}

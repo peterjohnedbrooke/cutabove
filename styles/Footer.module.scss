@@ -1,0 +1,27 @@
+.footerWrapper {
+    height: 200px;
+    background-color: #171717;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+
+    .iconsList {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color-secondary);
+        font-size: 30px;
+        max-width: 300px;
+        min-width: 200PX;
+    }
+}

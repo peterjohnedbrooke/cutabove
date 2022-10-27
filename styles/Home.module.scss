@@ -1,0 +1,18 @@
+@import "../styles/Landing.module.scss";
+@import "../styles/NavBar.module.scss";
+@import "../styles/Services.module.scss";
+@import "../styles/Bookings.module.scss";
+@import "../styles/Carousel.module.scss";
+@import "../styles/Contact.module.scss";
+@import "../styles/OurTeam.module.scss";
+@import "../styles/Footer.module.scss";
+@import "../styles/FindUs.module.scss";
+@import "../styles/Insta.module.scss";
+
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}

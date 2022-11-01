@@ -10,6 +10,7 @@
     margin: 0;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    background-color: white;
 
     .infoContainer {
         display: grid;
@@ -20,6 +21,7 @@
         padding: 1em;
         gap: 3em;
         font-family: var(--text-body-font);
+        color: var(--text-color-primary);
         
         ul {
             list-style-type: none;
